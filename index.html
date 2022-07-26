@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav>
+        <div class="menu" onclick="openClose ()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="youtube_image">
+            <img src="./YouTube_Logo_2017.png" alt="">
+        </div>
+        <div class="input_n">
+            <input class="qidir" type="search" placeholder="Введите запрос">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            <div class="mikrafon">
+                <i class="fa-solid fa-microphone"></i>
+            </div>
+        </div>
+
+        <div class="right_n">
+            <i class="fa-regular fa-video"></i>
+            <i class="fa-regular fa-bell"></i>
+        </div>
+        <div class="accaunt">
+            <h1><a href="https://accounts.google.com/SignOutOptions?hl=ru&continue=https://www.google.com%3Fhl%3Dru"></a>a</h1>
+        </div>
+    </nav>
+    <div class="video">
+        <div class="box_v">
+            <iframe width="747" height="400" src="https://www.youtube.com/embed/W_w-aOrb-Eg"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        <div class="post">
+            <ul>
+                <li><a href="https://www.youtube.com/hashtag/apple">#Apple</a></li>
+                <li><a href="https://www.youtube.com/hashtag/iphone">#iPhone</a></li>
+                <li><a href="https://www.youtube.com/hashtag/iphone14">#iPhone14</a></li>
+            </ul>
+            <h2>iPhone 14 – ЭТО КОНЕЦ</h2>
+            <div class="link">
+                <ul>
+                    <li>333 45</li>
+                    <li class="like1" onclick="like()"><i class="fa-regular fa-thumbs-up"></i> 6,8 ТЫС.</li>
+                    <li class="nolike"><i class="fa-regular fa-thumbs-down" onclick="nolike()"></i> НЕ НРАВИТСЯ</li>
+                    <li><i class="fa-solid fa-share"></i> ПОДЕЛИТЬСЯ</li>
+                    <li><i class="fa-solid fa-scissors"></i>СОЗДАТЬ КЛИП</li>
+                    <li><i class="fa-solid fa-indent"></i>СОХРАНИТЬ</li>
+                    <li><i class="fa-solid fa-ellipsis"></i></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar">
+        <input class="search" type="text" placeholder="Быстрый поиск...">
+        <ul>
+            <li><a href="#"><i class="fa-solid fa-house"></i><span>Главная</span></a></li>
+        </ul>
+        <ul>
+            <li><a href="#"><i class="fa-solid fa-globe"></i><span>Языки</span></a></li>
+        </ul>
+        <ul>
+            <li><a href="#"><i class="fa-regular fa-compass"></i></i><span>Навигатор</span></a></li>
+        </ul>
+        <ul>
+            <li><a href="#"><i class="fa-light fa-rectangle-history"></i><span>Подписки</span></a></li>
+        </ul>
+        <hr>
+        <div class="showmorebtn" onclick="ochiq()">
+            <ul>
+                <li><i class="fa-solid fa-angle-down"></i>Show More</li>
+            </ul>
+        </div>
+
+        <div class="showmore">
+            <li><i class="fa-solid fa-face-smile-beam"></i>User</li>
+
+            <li><i class="fa-solid fa-face-smile-beam"></i>User</li>
+
+            <li><i class="fa-solid fa-face-smile-beam"></i>User</li>
+
+            <li><i class="fa-solid fa-face-smile-beam"></i>User</li>
+
+            <li><i class="fa-solid fa-face-smile-beam"></i>User</li>
+
+            <li><i class="fa-solid fa-face-smile-beam"></i>User</li>
+            <div class="arrow2" onclick="Close()">
+                <ul>
+                    <li><i class="fa-solid fa-angle-up"></i>Show Les</li>
+                </ul>
+            </div>
+        </div>
+        <ul>
+            <li><a href="#"><i class="fa-light fa-book-copy"></i><span>Библиотека</span></a></li>
+        </ul>
+        <ul>
+            <li><a href="#"><i class="fa-solid fa-clock-rotate-left"></i><span>История</span></a></li>
+        </ul>
+        <ul>
+            <li><a href="#"><i class="fa-light fa-airplay"></i><span>Ваши видео</span></a></li>
+        </ul>
+        <ul>
+            <li><a href="#"><i class="fa-regular fa-clock"></i><span>Смотреть позже</span></a></li>
+        </ul>
+        <ul>
+            <li><a href="#"><i class="fa-regular fa-thumbs-up"></i><span>Понравившиеся</span></a></li>
+        </ul>
+    </div>
+
+
+</body>
+<script src="./app.js"></script>
+
+</html>
